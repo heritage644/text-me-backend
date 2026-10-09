@@ -1,0 +1,9 @@
+{
+  "name": "text-me-backend",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postStartCommand": "docker compose up -d db",
+  "forwardPorts": [3000]
+}
